@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <title>Personal Academic Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            line-height: 1.6;
+            background-color: #ffffff;
             color: #333;
         }
 
         header {
-            background-color: #000000;
-            color: white;
+            background: #f4f4f4;
             padding: 10px 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        main {
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background: #333;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        section {
             padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
         }
 
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
+            background: #333;
+            color: #fff;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -39,16 +65,39 @@
 <body>
 
     <header>
-        <h1>Welcome to My Profile Page</h1>
+        <h1>Your Name</h1>
+        <p>Welcome to My Academic Profile</p>
     </header>
 
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a simple example of an HTML page structure. It includes a header, a main content area, and a footer. You can use this as a starting point to create more complex pages.</p>
-    </main>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is a brief introduction about yourself, your research interests, and background.</p>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>List your research papers, articles, or notable works here.</p>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <p>Details about your teaching experience, courses, or academic contributions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can include your email or social media links for contact purposes.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Simple Web Page. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
 </body>
