@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Academic Profile</title>
+    <title>My Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,28 +16,34 @@
         }
 
         header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background: #f4f4f4;
             padding: 10px 20px;
-            text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
         }
 
         nav {
             display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            background: #333;
         }
 
         nav a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 15px;
             margin: 0 5px;
+            transition: background 0.3s ease;
         }
 
         nav a:hover {
-            background: #575757;
+            background: #ddd;
+            border-radius: 5px;
         }
 
         section {
@@ -66,39 +72,40 @@
 
     <header>
         <h1>Mohammad Labadi</h1>
-        <p>Welcome to My Academic Profile</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#publications">Projects</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#publications">Projects</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p> Hi! My name is Mohammad Labadi and I am a third year CS major at Cornell University.</p>
+        <p> Hi, my name is Mohammad Labadi. I am a third year Computer Science major at Cornell University. I aspire to make efficient software that is going to make lots of people's lives easier.</p>
     </section>
 
     <section id="publications">
         <h2>Projects</h2>
-        <p>1. Digital Humanities Projects </p>
-        <p>2. ocaml project </p>
-        <p> websites </p>
-        <p> </p>
+        <p>List your research papers, articles, or notable works here.</p>
     </section>
 
     <section id="teaching">
         <h2>Teaching</h2>
-        <p> AI Course </p>
-        <p> summer at king's </p>
-        <p> ECE 2300 Digital Logic</p>
+        <p>
+          <ul>
+          <li>CS 3700 - Foundations of AI Reasoning and Decision-making</li>
+          <li>ECE 2300 - Digital Logic and Computer Organization </li>
+          <li> Summer at King's </li>
+  
+        </ul>
+
+        </p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: allabadimohammad@outlook.com</p>
+        <p>Email: Allabadimohammad@outlook.com</p>
     </section>
 
     <footer>
